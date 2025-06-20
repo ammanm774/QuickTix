@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home - Travelista</title>
+    <link rel="stylesheet" href="css/QuickTix home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .navbar-custom {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-custom a.navbar-brand {
+            color: #fbc634;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        .navbar-custom .nav-link {
+            color: #333;
+            margin-right: 1rem;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #007bff;
+        }
+        .primary-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .primary-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+        .card img {
+            border-radius: 10px;
+        }
+        .footer-area {
+            background-color: #343a40;
+            color: white;
+            padding: 50px 0;
+        }
+        .footer-area a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-area a:hover {
+            text-decoration: underline;
+        }
+        .footer-social a {
+            color: white;
+            margin-right: 15px;
+        }
+        .pagination .page-link {
+            color: #007bff;
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .banner-section {
+    background: url('images/blog-home-banner.jpg') center center/cover no-repeat;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+
+<div style="color: #fbc634;" class="navbar">
+  
+    <a href="onlie ticket booking.html">
+      <h1 style="color: #fbc634;">Quick-Tix</h1>
+  
+    </a>
+  <div class="toggle">&#9776;</div>
+  <div class="menu">
+    
+    <a href="EXPLOR.HTML">Explore</a>
+    <a href="Blog home.html">Blog</a>`
+    <a href="About us.html">About Us</a>
+    <a href="contect.html">Contact</a>
+  </div>
+</div>
+
+<section class="banner-section d-flex align-items-center text-white text-center">
+    <div class="container">
+        <h1 class="display-4">Dude You’re Getting a Telescope</h1>
+        <p class="lead">There is a moment in the life of any aspiring astronomer that it is time to buy that first</p>
+        <a style="background-color: #fbc634;" href="blog-single.html" class="primary-btn">View More</a>
+    </div>
+</section>
+<section class="search-section">
+  <h2>Compare and Book Cheap </h2>
+  <div class="search-fields">
+    <input type="text" placeholder="From (e.g., KHI)">
+    <input type="text" placeholder="To (e.g., Anywhere)">
+    <input type="date">
+    <input type="date">
+    <input type="number" placeholder="Travelers" min="1" value="1">
+    <button style="background-color: #fbc634;" class="search-btn">Search Flights</button>
+  </div>
+</section>
+
+<section class="promotions">
+  <div class="promo">
+    <h3>Save up to $40</h3>
+    <p>On our flight booking fees.</p>
+  </div>
+  <div class="promo">
+    <h3>Save up to $100</h3>
+    <p>On Flight + Hotel deals.</p>
+  </div>
+  <div class="promo">
+    <h3>Save on hotel stays</h3>
+    <p>Zero service fees.</p>
+  </div>
+  
+</section>
+
+<!-- Blog Posts Area -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Posts -->
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <img src="images/LON-r2x.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Astronomy Binoculars A Great Alternative</h5>
+                        <p class="card-text">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend...</p>
+                        <a  style="color:black; background-color: #fbc634; border: #343a40;" href="blog-single.html" class="primary-btn">Book now</a>
+                    </div>
+                </div>
+                <nav class="d-flex justify-content-center">
+                    <!-- <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul> -->
+                </nav>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="mb-4">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search Posts">
+                        <button style="background-color: #fbc634; color: #333;" class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="mb-4">
+                    <h5>Popular Posts</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Space The Final Frontier</li>
+                        <li class="list-group-item">The Amazing Hubble</li>
+                        <li class="list-group-item">Astronomy Or Astrology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 style="color: #fbc634;" class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Quick-Tix
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 style="color: #fbc634;" class="text-uppercase fw-bold mb-4">
+            Navigation
+          </h6>
+          <p>
+            <a href="onlie ticket booking.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="EXPLOR.HTML" class="text-reset">Explore</a>
+          </p>
+          <p>
+            <a href="Blog home.html" class="text-reset">Blog</a>
+          </p>
+          <p>
+            <a href="About us.html" class="text-reset">About</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <div class="col-md-3">
+                        <h5 style="color: #fbc634;">Newsletter</h5>
+                        <p>For professionals caught between price and print output.</p>
+                        <form action="https://formsubmit.co/ammanm774@gmail.com" method="POST">
+                        <input type="email" name="email" placeholder="Email Address" class="form-control mb-2">
+                        <button style="background-color: #fbc634; border: 2px solid black; color: #333;" class="btn btn-primary w-100" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <a style="color: #fbc634;" href="contect.html"><h6 class="text-uppercase fw-bold mb-4">Contact</h6></a>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Quick-Tix offical web:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Quick-Tix.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

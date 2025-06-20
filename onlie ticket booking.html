@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>QuickTix</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="css/QuickTix home.css">
+</head>
+<body>
+  
+  <!-- Video Preloader -->
+  <div id="video-preloader">
+    <video id="intro-video" autoplay muted>
+      <source src="video/QuickTix.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+<div style="color: #fbc634;" class="navbar">
+  
+    <a href="onlie ticket booking.html">
+      <h1 style="color: #fbc634;">Quick-Tix</h1>
+  
+    </a>
+  <div class="toggle">&#9776;</div>
+  <div class="menu">
+    
+    <a href="EXPLOR.HTML">Explore</a>
+    <a href="Blog home.html">Blog</a>`
+    <a href="About us.html">About Us</a>
+    <a href="contect.html">Contact</a>
+  </div>
+
+  
+  <div style="box-shadow: 2px gray;border: 2px solid black;border-radius: 20px;" search-container>
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="search-button">🔍</button>
+  </div>
+</div>
+
+<!-- Responsive Animated Video Banners -->
+  <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <video autoplay loop muted playsinline>
+        <source src="video/banner1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="carousel-item">
+      <video autoplay loop muted playsinline>
+        <source src="video/banner2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="carousel-item">
+      <video autoplay loop muted playsinline>
+        <source src="video/banner3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+
+
+
+<section class="search-section">
+  <h2>Compare and Book Cheap Flights</h2>
+  <div class="search-fields">
+    <input type="text" placeholder="From (e.g., KHI)">
+    <input type="text" placeholder="To (e.g., Anywhere)">
+    <input type="date">
+    <input type="date">
+    <input type="number" placeholder="Travelers" min="1" value="1">
+    <button class="search-btn">Search Flights</button>
+  </div>
+</section>
+
+<section class="promotions">
+  <div class="promo">
+    <h3>Save up to $40</h3>
+    <p>On our flight booking fees.</p>
+  </div>
+  <div class="promo">
+    <h3>Save up to $100</h3>
+    <p>On Flight + Hotel deals.</p>
+  </div>
+  <div class="promo">
+    <h3>Save on hotel stays</h3>
+    <p>Zero service fees.</p>
+  </div>
+  
+</section>
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Ad Modal with Image -->
+<div class="modal fade" id="immediateAdModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">QuickTix</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/Yellow and Black Modern Business Webinar with Rounded Frame Facebook Post.png" alt="Ad Image" class="img-fluid rounded mb-3">
+        <p>Book your tickets now and save 20%! Limited time offer. 🎟️</p>
+        <a href="" class="btn btn-primary mt-2">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Initialize the modal
+    const adModal = new bootstrap.Modal(document.getElementById('immediateAdModal'));
+    // Show the modal as soon as the page loads
+    adModal.show();
+  });
+</script>
+
+<script>
+  const toggle = document.querySelector('.toggle');
+  const menu = document.querySelector('.menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+<!-- Outer Container to center the section -->
+<div style="background-color: lightgray;" class="promo-container">
+  <div class="promo-section">
+    <h2>Ready for a summer trip? Save on cheap flights!</h2>
+    <p>Your happy place just got more affordable. Save up to $100.00 on our fees.</p>
+
+    <div class="promo-cards">
+      <a href="">
+        <!-- Card 1 -->
+      <div class="promo-card">
+        <img src="images/domestic-summer-icon.webp" alt="Save on flights">
+        <div style="padding: 10px;">
+          <h4 >Hot Beach Deals</h4>
+          <button>Learn More</button>
+        </div>
+      </div>
+      </a>
+      <a href="">
+        <!-- Card 2 -->
+      <div class="promo-card">
+        <img src="images/packages-summer-icon.webp" alt="Save on packages">
+        <div style="padding: 10px;">
+          <h4>City Adventures</h4>
+          <button>Learn More</button>
+        </div>
+      </div>
+      </a>
+      <a href="">
+        <!-- Card 3 -->
+      <div class="promo-card">
+        <img src="images/hotels-summer-icon.webp" alt="Save on hotels">
+        <div style="padding: 10px;">
+          <h4>Family Fun</h4>
+          <button>Learn More</button>
+        </div>
+      </div>
+      </a>
+      <a href="">
+        <!-- Card 4 -->
+      <div class="promo-card">
+        <img src="images/cars-summer-icon.webp" alt="Save on car rentals">
+        <div style="padding: 10px;">
+          <h4>Romantic Getaways</h4>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+      </a>
+  </div>
+</div>
+
+<div style="background-color: lightgray;margin-bottom: 2%;" >
+  <h2 style="margin-left: 7%; ">Trending summer destinations from Karachi</h2>
+  
+  <div class="promo-cards">
+    <a href="">
+      <!-- Card 1 -->
+    <div class="promo-card">
+      <img src="images/IST-r2x.jpg" alt="Save on flights">
+      <div style="padding: 10px;">
+        <h4>Istanbul</h4>
+        <button>Learn More</button>
+      </div>
+    </div>
+    </a>
+    <a href="">
+      <!-- Card 2 -->
+    <div class="promo-card">
+      <img src="images/BKK-r2x.jpg" alt="Save on packages">
+      <div style="padding: 10px;">
+        <h4>Bangkok</h4>
+        <button>Learn More</button>
+      </div>
+    </div>
+    </a>
+    <!-- Card 3 -->
+    <a href="">
+      <div class="promo-card">
+      <img src="images/LON-r2x.jpg" alt="Save on hotels">
+      <div style="padding: 10px;">
+        <h4>London</h4>
+        <button>Learn More</button>
+      </div>
+    </div>
+    </a>
+    <a href="">
+      <!-- Card 4 -->
+    <div class="promo-card">
+      <img src="images/CAI-r2x.jpg" alt="Save on car rentals">
+      <div style="padding: 10px;">
+        <h4>Cairo</h4>
+        <button>Learn More</button>
+      </div>
+    </div>
+    </a>
+    <!-- Card 5 -->
+    <a href="">
+      <div class="promo-card">
+      <img src="images/KUL-r2x.jpg" alt="Save on car rentals">
+      <div style="padding: 10px;">
+        <h4>Kuala Lumpur</h4>
+        <button>Learn More</button>
+      </div>
+    </div>
+    </a>
+  </div>
+</div>
+
+<div  style="display: flex;margin: 0%;padding-top: 0%;">
+  <a href="">
+    <div class="big-div">
+  <img src="images/NYC-r2x.jpg" alt="First Image">
+  <div class="big-div-content">
+    <h3>New York City</h3>
+    <p>KHINYC Jul 27-Sep 25</p>
+  </div>
+</div>
+  </a>
+
+<a href="">
+  <div class="big-div">
+  <img src="images/helpline.jpg" alt="Second Image">
+  <div style="text-align: center;" class="big-div-content">
+    <h3>Need help finding deals?</h3>
+    <p>
+      
+Our live agents are ready to help you find phone deals!
+Book Now - Call Us
+    </p>  </div>
+</div>
+</a>
+
+<a href="">
+  <div class="big-div">
+  <img src="images/IST-r2x.jpg" alt="Third Image">
+  <div class="big-div-content">
+    <h3>Istanbul
+</h3>
+    <p>KHIIST
+Jul 13 - Jul 19</p>
+  </div>
+</div>
+</a>
+
+</div>
+
+<div class="review-container">
+    <div class="review-header">
+      <h2>What Our Customers Say About Our Service?</h2>
+    </div>
+    <div class="ratings">
+      <div class="rating">
+        <div><strong>sitejabber</strong></div>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <div>Excellent | 4 Stars</div>
+        <div>Based on 233,423 reviews</div>
+      </div>
+      <div class="rating">
+        <div><strong>Trustpilot</strong></div>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <div>Great | 4.1 Stars</div>
+        <div>Based on 23,777 reviews</div>
+      </div>
+    </div>
+    <div class="review-list">
+      <div class="review">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4>Good fly</h4>
+        <div class="date">May 30, 2025</div>
+        <p>I am very happy to fly Bucharest with the help of cheap air because company provide me…</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="review">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4>Family vacation</h4>
+        <div class="date">May 29, 2025</div>
+        <p>I highly recommend others to utilize Cheapoair.com! It was an amazing trip especially last min booking…</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="review">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4>Loved It</h4>
+        <div class="date">May 17, 2025</div>
+        <p>The overall trip was fantastic and I would recommend any of my friends that love to travel…</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="see-reviews">
+      <a href="#">See All Reviews</a>
+    </div>
+    <div class="submit-review">
+      <button>Submit A Review</button>
+    </div>
+  </div>
+<button class="scroll" onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+<a href="https://wa.me/923142171470?text=Hi" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+</a>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 style="color: #fbc634;" class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Quick-Tix
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 style="color: #fbc634;" class="text-uppercase fw-bold mb-4">
+            Navigation
+          </h6>
+          <p>
+            <a href="onlie ticket booking.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="EXPLOR.HTML" class="text-reset">Explore</a>
+          </p>
+          <p>
+            <a href="Blog home.html" class="text-reset">Blog</a>
+          </p>
+          <p>
+            <a href="About us.html" class="text-reset">About</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <div class="col-md-3">
+                        <h5 style="color: #fbc634;">Newsletter</h5>
+                        <p>For professionals caught between price and print output.</p>
+                        <form action="https://formsubmit.co/ammanm774@gmail.com" method="POST">
+                        <input type="email" name="email" placeholder="Email Address" class="form-control mb-2">
+                        <button style="background-color: #fbc634; border: 2px solid black; color: #333;" class="btn btn-primary w-100" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <a style="color: #fbc634;" href="contect.html"><h6 class="text-uppercase fw-bold mb-4">Contact</h6></a>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Quick-Tix offical web:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Quick-Tix.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+<!-- Add Bootstrap 5 for Carousel functionality (optional) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Show button after scrolling
+window.onscroll = function() { toggleBackToTop() };
+
+function toggleBackToTop() {
+  const btn = document.getElementById("backToTopBtn");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}</script>
+  <script>
+    // When the video ends, hide the preloader and show the main content
+    const introVideo = document.getElementById('intro-video');
+    const videoPreloader = document.getElementById('video-preloader');
+    const mainContent = document.getElementById('main-content');
+   
+    introVideo.addEventListener('ended', () => {
+      videoPreloader.style.display = 'none';
+      mainContent.style.display = 'block';
+    });
+  </script>
+</body>
+
+
+</html>
